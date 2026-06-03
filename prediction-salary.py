@@ -36,7 +36,7 @@ pred = model.predict([[experience]])
 print(f"\nPerson experience {experience}years -> salary $ {pred[0]:,.0f}")
 
 # 7. R**2
-print(f"\nТочность модели R²: {model.score(X, y):.2f}")
+print(f"\nAccuracy of the model R²: {model.score(X, y):.2f}")
 
 # 8. Final Graphic with points and line of the model
 plt.scatter(df["experience"], df["salary"],
